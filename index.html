@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+<body class="scrollable-section"> 
 
-<body>
-    <header class="header">
-        <a href='#' class="logo">Portfolio | Jack Stoltz</a>
-        <nav class="navbar">
-            <a href='#' class="active">Home</a> 
-            <a href='#'>Projects</a> 
-            <a href='#'>Contact Us</a>
+<header class="header">
+    <a href='#' class="logo">Portfolio | Jack Stoltz</a>
+    <nav class="navbar">
+            <a href= '#project-id'>Projects</a> 
+            <a href='#about-id'>About</a> 
+            <a href='#contact-id'>Contact</a>
         </nav>
     </header>
 
@@ -25,68 +25,98 @@
         </div>
 
         <div class="home-content">
-            <h1>Hi, I'm Jack Stoltz</h1>
+            <h1>Jack Stoltz</h1>
             <h3>Software Engineer</h3>
-            <p>Computer engineering student at Georgia Tech graduating May 2027</p>
+            <p>Computer engineering student at Georgia Tech graduating May 2026</p>
 
             <div class="home-sci">
-                <a href="#"><i class='bx bxl-linkedin-square' ></i></box-icon></a>
-                <a href="#"><i class='bx bxl-github' ></i></box-icon></a>
+                <a href="https://www.linkedin.com/in/jack-stoltz/"><i class='bx bxl-linkedin-square' ></i></box-icon></a>
+                <a href="https://github.com/JackStoltz"><i class='bx bxl-github' ></i></box-icon></a>
                 
             </div>
 
-            <a href="#" class="btn">Download Resume</a>
+            <a href="resume9-10-24edit.pdf" class="btn">Download Resume</a>
         </div>
     </section>
-    <div class="scrollable-section"> 
+    <div id="project-id"> 
 
             <section class="projects">
                 <div class="project-heading">
                     <h3>
-                        My Projects
+                        Projects
                     </h3>
                 </div>
 
                 <div class="project-container">
 
-                    <a href="" class="project-box">
+                    <div class="project-box">
                         <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
                         
-                            <div class="caption">Shell Project</div>
-                            <div class="projectbtn">skill</div>
-                            <div class="projectbtn">skill</div>
-                            <div class="projectbtn">skill</div>
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <div class="caption-head">
+                                    <h3>AI Text Sentiment Analyzer</h3>
+                                    </div>
+                                    <div class="caption-body">
+                                    <p>Web app that analyzes the sentiment of inputted text from user then uses trained ML model and Pandas to generate graph representing text's tone in real time.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projectbtn">Python</div>
+                            <div class="projectbtn">Flask</div>
+                            <div class="projectbtn">NLTK</div>
+                            <div class="projectbtn">Scikit-learn</div>
+                            <div class="projectbtn">Plotly</div>
+                            <div class="projectbtn">HTML/CSS</div>
+                            <div class="projectbtn">Bootstrap</div>
+                            <a href="https://github.com/JackStoltz/sentiment_Analysis" class="githubbtn">Github Link</a>
+                            <p class="demotitle">Demos</p>
                         </div>
-                        <img src="placeholder.png" alt="work">
-                    </a>
+                        
+                        <div style="display: flex; gap: 10px; justify-content: center;">
+                            <video width="500px" height="400px" controls="controls" style="margin-top:-20px;">
+                                <source src="sentimentdemo.mp4" type="video/mp4" />
+                            </video>
+                            
+                            <img width="500px" height="400px" src="sentimentdemopic.png" alt="work" style="margin-top: 20px; border: 2px solid #eeeeee;">
+                        </div>
+                    </div>
 
-                    <a href="" class="project-box">
+                    <a class="project-box">
                         <img src="placeholder.png" alt="work">
                         <p>Project 2 and all my links</p>
                     </a>
 
-                    <a href="" class="project-box">
+                    <a class="project-box">
                         <img src="placeholder.png" alt="work">
                         <p>Project 3 and all my links</p>
                     </a>
                     
-                    <a href="" class="project-box">
-                        <img src="placeholder.png" alt="work">
-                        <p>Project 4 and all my links</p>
-                    </a>
-
-                    <a href="" class="project-box">
-                        <img src="placeholder.png" alt="work">
-                        <p>Project 5 and all my links</p>
-                    </a>
-
-                    <a href="" class="project-box">
-                        <img src="placeholder.png" alt="work">
-                        <p>Project 6 and all my links</p>
-                    </a>
 
                 </div>
             </section>
+
+            <div class="about-me" id="about-id">
+                <div class="about-me-heading">
+                    <h3>About</h3>
+                </div>
+                <div class="about-me-content">
+                    <p>
+                        I am a dedicated computer engineering student at Georgia Tech, with a strong passion for software development. My expertise spans across various programming languages including Python, Java, and C, as well as web development technologies. I am actively seeking internships and opportunities to enhance my skills and contribute to innovative software engineering projects.
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact-me">
+                <div class="contact-me-heading" id="contact-id">
+                    <h3>Get In Touch</h3>
+                </div>
+                <div class="contact-me-content">
+                    <p style="margin-top: 30px;"><a href="mailto:jstoltz5@gmail.com" class="contactbtn">jstoltz5@gmail.com</a></p>
+                    <p style="margin-top: 50px;"><a href="mailto:jstoltz6@gatech.edu" class="contactbtn">jstoltz6@gatech.edu</a></p>
+                </div>
+            </div>      
+            <div style="height: 400px; background-color:#031540;"></div>
     </div>
 </body>
 </html>

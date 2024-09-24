@@ -26,15 +26,21 @@
     color: #031540;
     text-decoration: none;
     font-weight: 700;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
 }
 
 .navbar a {
     font-size: 18px;
     color: #fff;
+    background-color: #031540;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
     transition: .3s;
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 50px; /* Makes the background oval */
 }
 
 .navbar a:hover,
@@ -154,8 +160,7 @@
     width: 100%; 
     max-height: 2000px; /* Adjust height as needed */ 
     overflow-y: auto; /* Enables vertical scrolling */ 
-    border: 10px solid #031540; /* Optional border */ 
-    padding: 10px; /* Optional padding */ 
+    
     background-color: #fff; /* Optional background color */
     margin: 0px;
     padding: 0px;
@@ -177,9 +182,9 @@
 }
 
 .project-heading h3 {
-    font-size: 2.7rem;
+    font-size: 3rem;
     font-weight: 600;
-    text-transform: uppercase;
+    
     color: #222222;
 }
 
@@ -192,10 +197,11 @@
     margin: auto;
 }
 .project-box { 
-    width: 600px;
+    width: 1200px;
     padding: 15px;
     border: 1px solid #eeeeee;
     margin: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .project-box img{
     width: 100%;
@@ -205,26 +211,142 @@
 }
 
 .caption {
-    padding-bottom: 60px;
+    padding-bottom: 15px;
+    font-weight: 400;
+    color: black;
+    font-size: 20px;
 
 }
-
 .projectbtn {
-    width: 90px;
-    padding: 15px 25px;
-    background: #00abf0;
-    border-radius: 40px;
-    font-size: 17px;
+    padding: 5px 20px; 
+    background: #22abe0;
+    border-radius: 15px;
+    font-size: 16px;
     color: #fff;
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
     transition: .5s;
     display: inline-block;
-    margin-bottom: 15px;
-    margin-left: 60px;
+    margin: 5px 2px; /* Reduced horizontal margin to bring buttons closer */
+    margin-bottom: 7px; /* Decreased margin-bottom to reduce separation */
+    width: auto;
 }
 
 .projectbtn:hover {
     box-shadow: none;
+}
+
+.caption-head {
+    font-size: 20px;
+    font-weight: 600;
+    color: #031540;
+    margin-bottom: 20px;
+}
+
+.caption-body {
+    font-size: 18px;
+    font-weight: 400;
+    color: #031540;
+    margin-bottom: 5px; /* Decreased margin-bottom to reduce separation */
+}
+
+.githubbtn {
+    padding: 5px 20px; 
+    background: #000;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: .5s;
+    display: block; /* Changed to block to make it appear on its own line */
+    margin: 5px 2px;
+    margin-bottom: 7px;
+    width: fit-content; /* Reduced width */
+}
+
+.demotitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #031540;
+    margin-bottom: 0px; /* Reduced bottom margin */
+    margin-top: -30px; /* Reduced top margin */
+    text-align: center;
+    margin-left: -30px; /* Adjust the value as needed */
+}
+
+.about-me-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #031540;
+    text-align: center;
+    margin: 50px 0 20px;
+}
+
+.about-me-content {
+    background-color: #f8f8f8; /* Slightly different background color */
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #555;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+    border: 2px solid #031540; /* Border to separate from background */
+    padding: 20px; /* Padding inside the border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    background-color: #fff; /* Background color for the content */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    height:600px;
+}
+
+.contact-me-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #031540;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-me-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    width: 100%;
+    height: 200px;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactbtn {
+    padding: 15px 25px;
+    box-shadow: 0 0 5px #031540; /* Adds a shadow to make it pop */
+    color: #031540;
+    background: #f8f8f8;
+    border-radius: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 1px;
+    transition: .5s;
+    cursor: pointer; /* Makes the button look clickable */
+    margin: 0 10px; /* Adds horizontal separation */
+    text-decoration: none;
+    margin-top: 50px; /* Adds vertical separation */
+    margin-bottom: 10px; /* Adds vertical separation */
 }
