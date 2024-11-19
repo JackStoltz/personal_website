@@ -27,7 +27,7 @@
         <div class="home-content">
             <h1>Jack Stoltz</h1>
             <h3>Software Engineer</h3>
-            <p>Computer engineering student at Georgia Tech graduating May 2026</p>
+            <p>Computer engineering student at Georgia Tech graduating May 2027</p>
 
             <div class="home-sci">
                 <a href="https://www.linkedin.com/in/jack-stoltz/"><i class='bx bxl-linkedin-square' ></i></box-icon></a>
@@ -35,7 +35,7 @@
                 
             </div>
 
-            <a href="resume9-10-24edit.pdf" class="btn">Download Resume</a>
+            <a href="resume11-12-24.pdf" class="btn">Download Resume</a>
         </div>
     </section>
     <div id="project-id"> 
@@ -58,18 +58,8 @@
                                 <h3>Hermedoc</h3>
                                 </div>
                                 <div class="caption-body">
-                                <!--<p>Secure RAG app that trains LLAMA-3 model locally on users' data for sensitive industries to integrate AI into their companies without security concerns and optimize their workflow.</p>-->
-                                            <p>
-                                                Hermedoc is a secure, on-device AI chat assistant tailored for industries that handle sensitive data. Inspired by feedback from professionals in fields like finance and defense, Hermedoc addresses a gap left by general AI chatbots, which rely on cloud servers and are unsuitable for confidential data processing. Hermedoc allows users to upload Private Contextual Data (PCD) locally, using it to provide relevant, precise responses to specific queries while preserving strict data privacy. This approach eliminates cloud-related security risks, making Hermedoc a valuable tool for researchers, compliance officers, and other professionals needing AI support within confidentiality constraints.
-
-                                                The system is built on a robust stack, utilizing LLAMA for local language model processing to ensure all data stays secure on the user’s device. Hermedoc also incorporates the Hugging Face library to generate embeddings based on PCD, enhancing the chatbot’s contextual accuracy. These embeddings are stored and managed within a vector database powered by LlamaIndex, which serves as the retrieval system that links user data to LLAMA, creating a secure retrieval-augmented generation (RAG) setup. This framework allows Hermedoc to respond efficiently with contextually relevant answers tailored to user-specific data.
-                                                
-                                                To ensure a smooth and intuitive experience, Hermedoc’s frontend is developed in React, while the backend is powered by Flask. The frontend enables users to upload documents, ask queries, and view responses in a user-friendly interface, while Flask seamlessly manages data processing and the connection to the RAG system.
-                                                
-                                                Developing Hermedoc presented challenges, particularly in integrating the RAG framework and maintaining compatibility across libraries. Additionally, handling large datasets on a local system posed computational limitations, leading us to consider optimizations for future versions. Despite these hurdles, we successfully built a secure, high-performing assistant that provides an intuitive interface and accurate, data-driven responses.
-                                                
-                                                Future plans for Hermedoc include optimizing PCD embeddings and exploring homomorphic encryption, allowing for secure cloud computations without compromising data confidentiality.
-                                            </p>
+                                <p>Secure RAG app that trains LLAMA-3 model locally on users' data for sensitive industries to integrate AI into their companies without security concerns and optimize their workflow.</p>
+                                        
                                 </div>
                             </div>
                         </div>
@@ -106,16 +96,8 @@
                                     <h3>NextRead</h3>
                                     </div>
                                     <div class="caption-body">
-                                    <!--<p>Web app that generates book recommendations for users based on books, authors, and genres that they have previously enjoyed and added to their library.</p>-->
-                                    <p>
-                                                                                                        I developed a personalized book recommendation system that uses machine learning to provide users with tailored book suggestions based on their reading history. The project combines collaborative filtering, content-based filtering, and hybrid approaches to recommend books that align with each user’s unique preferences. By leveraging a diverse dataset of user reading habits and book metadata, including titles, authors, genres, and descriptions, I created a robust model that understands and predicts individual reading tastes.
-
-                                                                The system’s backend is built in Python, utilizing libraries like Scikit-learn for machine learning algorithms and NLTK for natural language processing, enabling the model to analyze textual data and identify similar books effectively. Data preprocessing involved extensive cleaning, feature engineering, and encoding to ensure the system could handle a wide range of book data and user interactions. I used collaborative filtering techniques, such as Singular Value Decomposition (SVD), to identify patterns in user-item interactions, while content-based filtering incorporated NLP techniques to match users with books featuring similar themes and styles.
-
-                                                                For deployment, I implemented a RESTful API using Flask, making the recommendation engine accessible and scalable for integration into any web or mobile application. The system is containerized with Docker and designed to scale on cloud platforms like AWS, ensuring it can manage high user loads and provide real-time recommendations seamlessly. To enhance the user experience, I set up a feedback loop, allowing users to rate their recommendations, which continuously feeds data back into the model to improve accuracy over time.
-
-                                                                This recommendation system prioritizes ethical considerations, including data privacy compliance with GDPR and actively monitoring for potential biases in recommendations. With robust evaluation metrics and a focus on optimizing the model’s performance, the system offers a highly personalized reading experience, encouraging users to discover books they are likely to enjoy based on their reading history and preferences.
-                                    </p>
+                                    <p>Web app that generates book recommendations for users based on books, authors, and genres that they have previously enjoyed and added to their library.</p>
+                                    
                                     </div>
                                 </div>
                             </div>
@@ -148,18 +130,8 @@
                                     <h3>AI Text Sentiment Analyzer</h3>
                                     </div>
                                     <div class="caption-body">
-                                    <!--<p>Web app that analyzes the sentiment of inputted text from user then uses trained ML model and Pandas to generate graph representing text's tone in real time.</p>-->
-                                    <p>
-                                                                                            For my sentiment analysis project, I developed a machine learning model capable of analyzing and interpreting the emotions behind textual data. The primary goal of the project was to accurately assess and classify user sentiments, ranging from positive and negative to more nuanced emotions like joy, anger, sadness, and surprise. This project not only demonstrates my technical skills in natural language processing (NLP) but also reflects my interest in understanding how language conveys complex emotional expressions.
-
-                                                    To start, I gathered a diverse dataset of text samples with pre-labeled sentiment classifications, ensuring that the model could learn from a wide range of language styles and emotional tones. Data preprocessing involved cleaning and normalizing the text data—removing unnecessary symbols, punctuation, and stopwords—while tokenizing the language for deeper analysis. I used advanced NLP techniques, leveraging tools like NLTK and spaCy, to transform text into numerical data that could be effectively processed by the model.
-
-                                                    The core of the project involved building a sentiment classification model. Using Python’s Scikit-learn library, I experimented with several machine learning algorithms, including logistic regression, Naive Bayes, and support vector machines (SVM). After testing each model, I optimized the best-performing model to ensure both speed and accuracy. Additionally, I incorporated word embeddings to enhance the model’s ability to capture contextual meaning, which allowed it to understand sentiments in various contexts more accurately.
-
-                                                    Once the model achieved high accuracy on test data, I deployed it as a RESTful API using Flask, making it accessible for real-time sentiment analysis. This setup allows for quick integration into applications where instant sentiment insights can drive valuable user interactions and business decisions. For deployment, I containerized the application with Docker, facilitating scalability and making it cloud-ready.
-
-                                                    This project gave me hands-on experience in all stages of the machine learning pipeline, from data preprocessing and model selection to deployment and integration. By continuously tuning the model based on feedback, I ensured its reliability and adaptability to new data. Overall, this sentiment analysis project equipped me with valuable skills in NLP and machine learning, enhancing my ability to develop intelligent systems that interpret and respond to human language.
-                                    </p>
+                                    <p>Web app that analyzes the sentiment of inputted text from user then uses trained ML model and Pandas to generate graph representing text's tone in real time.</p>
+                                   
                                     </div>
                                 </div>
                             </div>
@@ -192,17 +164,8 @@
                                     <h3>CV Finger-Guided Arduino Hammer</h3>
                                     </div>
                                     <div class="caption-body">
-                                    <!--<p>Computer vision-based servo control system enabling real-time, gesture-driven adjustments, where finger movements guide dual servos with Arduino and Python for responsive hardware interaction via serial communication.</p>-->
-                                                    <p>This project is a computer vision-based servo control system enabling real-time, gesture-driven adjustments of two servos based on specific hand and finger movements. Using Python, Arduino, OpenCV, and MediaPipe, this system creates a responsive interface where hand gestures control the movement of servo motors. The core idea is to bridge human gesture recognition with machine interaction, enabling intuitive control without traditional input devices.
-
-                                                        The system’s backbone is a computer vision setup that uses OpenCV for video capture and MediaPipe for hand-tracking. Through a live video feed, MediaPipe detects the positions and states (up or down) of individual fingers. Each finger has a designated control function: raising the index finger moves Servo1 left, the middle finger moves Servo1 right, the ring finger moves Servo2 left, and the pinky moves Servo2 right. When a finger is lowered, the corresponding servo stops, allowing precise control over movement.
-                                                        
-                                                        Python processes the gesture data and sends it via serial communication to the Arduino, where it is interpreted into motion commands for the servos. This setup allows rapid, real-time updates essential for creating a responsive experience that aligns servo movement closely with hand gestures.
-                                                        
-                                                        The hardware side involves two servos connected to the Arduino, which adjusts their positions based on the finger states it receives. By using incremental angle adjustments, the servos move smoothly, offering a natural interaction flow.
-                                                        
-                                                        This project combines computer vision, embedded systems, and serial communication, showcasing an efficient way to control hardware intuitively. Its potential applications extend to robotics, drones, and other fields where hands-free, gesture-based control is valuable, making it an adaptable and innovative interface for real-time machine interaction.
-                                                    </p>
+                                    <p>Computer vision-based servo control system enabling real-time, gesture-driven adjustments, where finger movements guide dual servos with Arduino and Python for responsive hardware interaction via serial communication.</p>
+                                                    
                                     </div>
                                 </div>
                             </div>
@@ -237,11 +200,13 @@
                 </div>
                 <div class="about-me-content">
                     <p>
-                        Hello! I'm Jack Stoltz, a student at Georgia Tech studying computer engineering. <br><br>From Brooklyn NY, I've always had a passion for technology and innovation that has driven me to explore a variety of extracurriculars, personal projects, and internships.
+                        Hi, I’m Jack Stoltz – a creative problem solver, aspiring software engineer, and avid explorer of the ever-evolving world of technology. <br><br>I’m currently studying Computer Engineering at Georgia Tech, where I’ve had the opportunity to turn bold ideas into impactful projects, from designing a locally-run secure ML model to analyzing sentiments of people's online discourse, and even diving into software-hardware integration with numerous fun Arduino projects.<br><br>
 
-I am especially interested in software engineering and developing creative applications. <br><br>My involvement in innovative projects that I work on with my friends has helped me grow immensely and develop the leadership & collaborative skills that are necessary in the professional world.<br><br>
+I thrive on bringing creative applications to life, whether it’s developing tools that make life easier, exploring the cutting edge of generative AI, or collaborating on projects with talented peers. My experiences have shaped not just my technical skills but also my ability to lead, collaborate, and adapt to challenges with curiosity and enthusiasm.<br><br>
 
-In my free time I love traveling, hiking, playing Basketball, and trying new and unique foods.
+When I’m not deep into code or crafting solutions, you’ll probably find me hiking a scenic trail, shooting hoops on the basketball court, or traveling to discover unique cultures and, of course, their food! Born and raised in Brooklyn, NY, I’ve always been drawn to the energy of big ideas, which inspires everything I create.<br><br>
+
+If you’re into innovation, great stories, or just need a teammate for your next project, let’s connect! Together, we might just create something extraordinary.
                     </p>
                 </div>
             </div>
